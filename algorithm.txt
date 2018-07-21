@@ -1,0 +1,19 @@
+[2 , -1 , 3 , 0 , 100 , 5] #begin
+[-1 , 2 , 3 , 0 , 100 , 5] #move -1
+[-1 , 2 , 3 , 0 , 100 , 5] #move 3
+[-1 , 2 , 0 , 3 , 100 , 5] #move 0
+[-1 , 0 , 2 , 3 , 100 , 5] #move 0
+[-1 , 0 , 2 , 3 , 100 , 5] #move 100
+[-1 , 0 , 2 , 3 , 5 , 100] #move 5
+#finish
+
+STEP BY STEP:
+from the second number to the last number:
+    take the number in line (nextinline)
+    i = the number before it
+    while i > 0, so while nextinline is not the first number, and while i is bigger than the nextinline
+        move i over one to the right
+        repeat with the number before it
+
+def sorter(list):
+    for number in list
